@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h1>Welcom to Laravel Project</h1>
                 </div>
             </div>
         </div>
