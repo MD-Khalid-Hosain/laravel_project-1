@@ -26,12 +26,15 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Home') }}
                 </a>
+                {{error_reporting(0)}}
                 <a class="nav-link" href="{{ route('student_information') }}">
                   Create
                 </a>
+                @if(Auth::user()->role_id==3)
                 <a class="nav-link" href="{{ route('student_list') }}">
                     Studen list
                 </a>
+                @endif
                 <a class="nav-link" href="{{ route('student_type') }}">
                     Select type
                 </a>

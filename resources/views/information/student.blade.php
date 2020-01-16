@@ -12,7 +12,7 @@
           <li>{{ $error }}</li>
           @endforeach
             </ul>
-        </div><br />
+        </div><br/>
         @endif
       <form action="{{ route('student_create') }}" method="post">
         @csrf
@@ -24,6 +24,7 @@
         <div class="form-group">
           <label for="exampleInputPassword1">Email</label>
           <input type="email" name="email" class="form-control" id="exampleInputPassword1" value="{{old('email')}}" placeholder="Write your Email">
+          
         </div>
 
         <div class="form-group">

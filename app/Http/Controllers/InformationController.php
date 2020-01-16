@@ -12,6 +12,7 @@ class InformationController extends Controller
   public function __construct()
   {
       $this->middleware('auth');
+      $this->middleware('role');
   }
     function student(){
       $types = StudentType::all();
