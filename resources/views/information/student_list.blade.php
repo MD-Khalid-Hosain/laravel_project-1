@@ -11,6 +11,7 @@
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Address</th>
+              <th scope="col">Type</th>
               <th scope="col">Created</th>
               <th scope="col">Updated</th>
               <th scope="col">Action</th>
@@ -23,6 +24,7 @@
               <td>{{$list->name}}</td>
               <td>{{$list->email}}</td>
               <td>{{$list->address}}</td>
+              <td>{{$list->relationBetweenType->type}}</td>
               <td>{{$list->created_at->diffForHumans()}}</td>
               <td>{{$list->updated_at}}</td>
               <td>

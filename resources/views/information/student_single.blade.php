@@ -22,6 +22,14 @@
           <label for="exampleInputPassword1">Address</label>
           <input type="text" name="address" value="{{ $single->address }}" class="form-control" id="exampleInputPassword1" placeholder="Write your Address">
         </div>
+        <div class="form-group">
+          <label for="inputState">Type</label>
+          <select id="inputState" class="form-control" name="student_type">
+            @foreach($types_of_student as $types)
+            <option value="{{$types->id}}">{{$types->type}}</option>
+            @endforeach
+          </select>
+        </div>
         <button type="submit" class="btn btn-primary">Update</button>
       </form>
     </div>
